@@ -11,7 +11,7 @@ variable "ami_filter"{
   description = "Name filter for ami"
   default = {
     name = "bitnami-tomcat-*-x86_64-hvm-ebs-nami"
-    owners = "979382823631" # Bitnami
+    owner = "979382823631" # Bitnami
   }
   
 }
