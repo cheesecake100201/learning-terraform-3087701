@@ -35,8 +35,8 @@ module "blog_autoscaling" {
   version                = "6.10.0"
 
   name                   = "${var.environment.name}-blog"
-  min_size               = var.min_size.default
-  max_size               = var.max_size.default
+  min_size               = var.min_size
+  max_size               = var.max_size
 
   vpc_zone_identifier    = module.blog_vpc.public_subnets
   target_group_arns      = module.blog_alb.target_group_arns
